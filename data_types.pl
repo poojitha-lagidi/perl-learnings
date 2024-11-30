@@ -38,11 +38,11 @@ print "@arr7 \n@arr8 \n";
 #Array Operations
 push @arr8, 3.14; #Adds elements to the end
 print("@arr8\n");
-pop @arr8; #Remobves the last element
+pop @arr8; #Removes the last element
 print("@arr8\n");
 unshift (@arr8, 0x25); #Adds elements to the start
 print("@arr8\n");
-shift @arr8; #Remobves the first element
+shift @arr8; #Removes the first element
 print("@arr8\n");
 
 
