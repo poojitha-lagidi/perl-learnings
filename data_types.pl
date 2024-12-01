@@ -1,6 +1,6 @@
 #!D:\PERL\perl\bin -w #shebang line
 
-#Description :: First Perl Program
+#Description :: Perl Data Types
 #Author :: Poojitha Lagidi
 
 use strict;
