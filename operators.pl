@@ -24,7 +24,7 @@ my $var4 = "Operators";
 print $var3.$var4, "\n"; #String Concatenation
 print $var3 x 3, "\n"; #String Repetition
 print ((($var3." ") x 3), "\n");
-$var3 .= " "; # $var3 = $var3." ";
+$var3 .= " "; # $var3 = $var3." "; (.= is Concatenate and assign)
 $var3 x= 5; # $var3 = $var3 x 5;
 print $var3,"\n";
 
@@ -32,7 +32,7 @@ print $var3,"\n";
 #Equality Operators
 # o/p if true = 1; o/p if false = blank space
 #Numeric comparisions
-print "\nNumeric comparisions-\n";
+print "\nNumeric comparisons-\n";
 my $var5 = 5;
 my $var6 = 0x5;
 print $var5 == $var6,"\n"; #equal to 
@@ -58,7 +58,8 @@ print $var7 cmp $var8, "\n";
 
 #Assignment Operators
 print "\nAssignment Operators- \n";
-my $var9 = 7;
+my $var9 = 7; #Simple Assignement (=)
+print $var9 **= 2,"\n";
 print $var9 += 2,"\n";
 print $var9 -= 2,"\n";
 print $var9 *= 2,"\n"; 
@@ -86,8 +87,8 @@ print $var10>>3,"\n"; #Right shift
 
 
 #Logical Operators
-#The &&/and operator returns the second operand if the first is true (non-zero, non-undef), otherwise, it returns the first operand.
-#The ||/or operator returns the first true(non-zero, non-undef) operand, or the last operand if both are false.
+#The &&/and operator returns the second operand if the first operand is true (non-zero, non-undef), otherwise, it returns the first operand.
+#The ||/or operator returns the first operand if it is true (non-zero and non-undef), or the last operand if the first one is false (zero, empty string, or undef)
 #The !/not operator negates a boolean value. If the value is true(non zero), it returns false; if the value is false, it returns true.
 print "\nLogical Operators- \n";
 my $var12 = 13;
@@ -105,7 +106,6 @@ print $var14, "\n";
 
 
 #List Operators
-#join,  grep
 print "\nList Operators- \n";
 my @var15 = qw(This is Perl!);
 my $var16 = "Perl";
@@ -124,6 +124,7 @@ print $var18, "\n";
 my $var19 = "clementinen,banana,dates,apple"; 
 my @var20 = split(",",$var19); #Splits a string into a list based on a delimiter(here ,)
 print "$var20[2] \n";
+print "@var20 \n";
 my @var21 = split(",",$var19,2); # To limit the splits. Perl will stop the splitting after the second element 
 print @var21, "\n";
 my @var22 = join(",", @var20); #Joins elements of a list into a single string with a separator(here ,)
