@@ -1,6 +1,6 @@
 # All about Perl - Practical Extraction & Reporting Language
 Perl is a high-level, interpreted language that allows for faster development time. It is well-suited for performing automation tasks, and powerful code can be written in just a few lines using Perl.
-## Writing a basic Perl Program 
+## Basics of writing a Perl Program 
 1. Shebang line (or Interpreter line) is the first line of the file, starting with **#!**, followed by the path to the Perl interpreter. Its primary purpose is to tell the operating system which interpreter should be used to execute the script.
 2. **-w** or **use warnings;** is used to enable warnings.
 3. **use strict;** enforces strict programming rules, encourages better coding practices and helping prevent common errors. This stops the execution of the script instead of just giving warnings. _For better practice, combine warnings with use strict._
