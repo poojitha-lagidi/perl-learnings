@@ -49,3 +49,21 @@ do{
 	print"Value of a = $a\n";
 	$a++;
 }until($a==3);
+
+
+# $_ is the default variable used by many functions and loops. If no variable is explicitly specified, Perl operates on $_ by default.
+# In short, $_ is Perl’s shorthand for "use this implicitly if nothing else is provided."
+print ("\nUsage of default variable in Perl:\n");
+for(1..5){
+	print"$_\t";
+}
+print "\n";
+$_ = "Hello, World!";
+if (/World/) {
+    print "Found 'World' in $_\n";  # $_ contains the string "Hello, World!"
+}
+$_ = "Hello, World!";
+s/World/Perl/;  # Substitute "World" with "Perl" in $_
+print $_,"\n";
+$_ = "Hello!";
+print;  # prints "Hello!", as print uses $_ by default
